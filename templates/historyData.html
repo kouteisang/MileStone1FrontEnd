@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Queen Chrysalis | Milestone 1</title>
+        <!-- STYLESHEETS : begin -->
+		<link rel="stylesheet" type="text/css" href="../static/assets/css/general.css"><!-- Default styles generated from assets/scss/general.scss (do not edit) -->
+        <link rel="stylesheet" type="text/css" href="../static/assets/css/color-schemes/default.css"><!-- Default color scheme generated from assets/scss/color-schemes/default.scss (change to other pre-defined or custom color scheme) -->
+		<link rel="stylesheet" type="text/css" href="../static/style.css"><!-- Place your own CSS into this file -->
+		<!-- STYLESHEETS : end -->
+</head>
+<body>
+	<div id="wrapper">
+			<a href="#main" class="accessibility-link accessibility-link--skip-to-content screen-reader-text">Skip to content</a>
+			<a href="#header-menu-primary" class="accessibility-link accessibility-link--skip-to-nav screen-reader-text">Skip to main navigation</a>
+			<a href="#footer" class="accessibility-link accessibility-link--skip-to-footer screen-reader-text">Skip to footer</a>
+			<header id="header" class="header--has-logo header--has-topbar header--has-search header--has-social-links header--sticky">
+			<div class="header__inner"/>
+			<div class="header__topbar">
+						<div class="header__topbar-inner">
+							<!-- email -->
+							<nav class="header-menu-secondary" aria-label="Secondary Header Menu">
+								<ul id="menu-secondary-header-menu" class="header-menu-secondary__list" role="menu">
+									<li class="header-menu-secondary__item header-menu-secondary__item--level-0 header-menu-secondary__item--has-icon" role="presentation">
+										<span class="header-menu-secondary__item-icon lsvr-icon-envelope" aria-hidden="true"></span>
+										<span  class="header-menu-secondary__item-link header-menu-secondary__item-link--level-0" role="menuitem">yijingpan@foxmail.com ｜ huangchengadam@gmail.com</span>
+									</li>
+								</ul>
+							</nav>
+						</div>
+			</div>
+			<header class="main-header">
+                        <div class="main-header__inner">
+                            <h1 class="main-header__title">Temperature & Humidity</h1>
+                            <div class="main-header__subtitle">
+                                <p>In this section you can <strong> see the history data about Temperature & Humidity </strong>.
+                                    The data is displayed in the table below.
+                                </p>
+                            </div>
+                        </div>
+			</header>
+            <div class="col-md-12 mt">
+             <div class="content-panel">
+              <table class="table table-hover">
+                <hr>
+                <thead>
+                  <tr>
+                    <th>Temperature</th>
+                    <th>Humidity</th>
+                    <th>CreateTime</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+            <!-- FOOTER : begin -->
+			<footer id="footer" class="footer--has-widgets footer--has-menu footer--has-social-links footer--has-text footer--has-back-to-top">
+				<div class="footer__inner">
+
+					<!-- FOOTER WIDGETS : begin -->
+					<div class="footer-widgets footer-widgets--wider-first-col"><!-- Remove the "footer-widgets--wider-first-col" to make all columns equal width. -->
+						<div class="lsvr-container">
+							<div class="footer-widgets__inner">
+								<!-- GRID : begin -->
+								<div class="lsvr-grid">
+									<!-- GRID COLUMN : begin -->
+									<div class="footer-widgets__column lsvr-grid__col lsvr-grid__col--span-3 lsvr-grid__col--md-span-4 lsvr-grid__col--sm-span-6">
+										<div class="footer-widgets__column-inner">
+
+											<!-- LSVR TEXT WIDGET : begin -->
+											<div class="widget lsvr-text-widget">
+												<div class="widget__inner">
+													<h3 class="widget__title">Queen Chrysalis ｜ Millstone 1</h3>
+													<div class="widget__content">
+														<p>This is the Millstone 1 webpage. The Queen Chrysalis group contains two members <strong>Yijing Pan</strong> and <strong>Cheng Huang</strong>.
+														   Through this website you can control the LED. There are two operations which are <strong> Turn on the LED </strong> and <strong>Turn off the LED</strong>.
+														   Besides, you can also see the <strong>state of LED temperature and humidity's history data </strong>by time and you an also see the distance.
+														</p>
+													</div>
+												</div>
+											</div>
+											<!-- LSVR TEXT WIDGET : end -->
+
+										</div>
+									</div>
+
+									<!-- GRID COLUMN : end -->
+
+								</div>
+								<!-- GRID : end -->
+
+							</div>
+						</div>
+					</div>
+					<!-- FOOTER WIDGETS : end -->
+
+					<!-- FOOTER BOTTOM : begin -->
+					<div class="footer-bottom">
+						<div class="lsvr-container">
+							<div class="footer-bottom__inner">
+
+								<!-- FOOTER TEXT : begin -->
+								<div class="footer-text">
+									<p>&copy; Yijing Pan & Cheng Huang</p>
+								</div>
+								<!-- FOOTER TEXT : end -->
+
+							</div>
+						</div>
+					</div>
+					<!-- FOOTER BOTTOM : end -->
+				</div>
+			</footer>
+			<!-- FOOTER : end -->
+			</header>
+		</div>
+</body>
+
+<script>
+    //获取元素
+     var tbody = document.getElementsByTagName('tbody');
+     var json  = [{TEMPERATURE:27.5, HUMIDITY: 30, CREATETIME:'2021-07-21 01:01:01'}];
+     for(var i=0;i<json.length;i++){
+    //创建新的tr（newTr）
+      var newTr=document.createElement('tr');
+             //添加tr里的内容
+             newTr.innerHTML = '<td>'+json[i].TEMPERATURE+'</td><td>'+json[i].HUMIDITY+'</td><td>' + json[i].CREATETIME + '</td>'
+             //把新的tr(newTr)加入到tbody中
+             tbody[0].appendChild(newTr);
+     }
+</script>
+
+</html>

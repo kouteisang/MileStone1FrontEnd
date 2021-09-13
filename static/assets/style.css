@@ -1,0 +1,39 @@
+/*! -----------------------------------------------------------------------------
+
+	v1.0.0
+
+	This template's CSS is coded with SASS (http://sass-lang.com/).
+	It is not recommended to make changes to core CSS files (assets/scss and assets/css),
+	because that will make it much harded to update the template in the future.
+	Use this file (style.css) to add your CSS overrides instead.
+
+	SASS source files can be found in assets/scss folder.
+	However, the proper way to examine the site's CSS is to use
+	object inspector tool of your browser.
+
+----------------------------------------------------------------------------- */
+
+/* Google Fonts import URL */
+@import url( 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap' );
+
+/* Primary font */
+body, input, textarea, select, button { font-family: 'Inter', Arial, sans-serif; }
+html, body { font-size: 16px; }
+
+/* Set logo dimensions */
+.header-logo { max-width: 170px; }
+
+/* Fancy link hover effect
+either add "fancy-link" or "fancy-link2" class to a text link where you want to use a fancy underline effect, or use these CSS definitions for your custom class */
+
+	/*  No initial underline */
+	.fancy-link { text-decoration: none; box-shadow: 0 0 0 0 #ff007c; }
+	.fancy-link:hover { text-decoration: none; box-shadow: 0 2px 0 0 #ff007c; }
+	.fancy-link:active { box-shadow: 0 1px 0 0 #ff007c; }
+
+	/*  With initial underline */
+	.fancy-link2 { text-decoration: none; box-shadow: 0 1px 0 0 #ff007c; }
+	.fancy-link2:hover { text-decoration: none; box-shadow: 0 2px 0 0 #ff007c; }
+	.fancy-link2:active { box-shadow: 0 1px 0 0 #ff007c; }
+
+/* Add your own CSS or overrides after this comment */

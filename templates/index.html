@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Queen Chrysalis | Milestone 1</title>
+        
+
+
+		<link rel="stylesheet" type="text/css" href="../static/assets/css/general.css"><!-- Default styles generated from assets/scss/general.scss (do not edit) -->
+        <link rel="stylesheet" type="text/css" href="../static/assets/css/color-schemes/default.css"><!-- Default color scheme generated from assets/scss/color-schemes/default.scss (change to other pre-defined or custom color scheme) -->
+		<link rel="stylesheet" type="text/css" href="../static/style.css"><!-- Place your own CSS into this file -->
+
+
+	</head>
+	<body>
+
+		<!-- WRAPPER : begin -->
+		<div id="wrapper">
+
+			<a href="#main" class="accessibility-link accessibility-link--skip-to-content screen-reader-text">Skip to content</a>
+			<a href="#header-menu-primary" class="accessibility-link accessibility-link--skip-to-nav screen-reader-text">Skip to main navigation</a>
+			<a href="#footer" class="accessibility-link accessibility-link--skip-to-footer screen-reader-text">Skip to footer</a>
+
+			<!-- HEADER : begin -->
+			<header id="header" class="header--has-logo header--has-topbar header--has-search header--has-social-links header--sticky">
+				<div class="header__inner">
+
+					<!-- HEADER TOPBAR : begin -->
+					<div class="header__topbar">
+						<div class="header__topbar-inner">
+							<!-- email -->
+							<nav class="header-menu-secondary" aria-label="Secondary Header Menu">
+								<ul id="menu-secondary-header-menu" class="header-menu-secondary__list" role="menu">
+									<li class="header-menu-secondary__item header-menu-secondary__item--level-0 header-menu-secondary__item--has-icon" role="presentation">
+										<span class="header-menu-secondary__item-icon lsvr-icon-envelope" aria-hidden="true"></span>
+										<span  class="header-menu-secondary__item-link header-menu-secondary__item-link--level-0" role="menuitem">yijingpan@foxmail.com ｜ huangchengadam@gmail.com</span>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<!-- HEADER TOPBAR : end -->
+
+					<!-- HEADER NAVBAR : begin -->
+					<div class="header__navbar">
+						<div class="header__navbar-inner">
+							<!-- HEADER NAVBAR CONTAINER : begin -->
+							<div class="header__navbar-container">
+								<!-- HEADER BRANDING : begin -->
+								<div class="header-branding">
+									<div class="header-branding__inner">
+										<!-- HEADER LOGO : begin -->
+										<div class="header-logo">
+											<div href="index.html"  style="width:180%" !important class="header-logo__link">
+												<img src="../static/content/queenchrysalis.png" width="100px" height="50px" class="header-logo__image" alt="Wordbench">
+												<a href="#">Yijing Pan & Cheng Huang</a>
+											</div>
+										</div>
+										<!-- HEADER LOGO : end -->
+									</div>
+								</div>
+								<!-- HEADER BRANDING : end -->
+							</div>
+							<!-- HEADER NAVBAR CONTAINER : end -->
+						</div>
+					</div>
+					<!-- HEADER NAVBAR : end -->
+				</div>
+			</header>
+			<!-- HEADER : end -->
+
+			<!-- CORE : begin -->
+			<div id="core" class="core--fullwidth core--fullwidth-without-title">
+				<div class="core__inner">
+
+					<!-- MAIN : begin -->
+					<main id="main">
+						<div class="main__inner">
+							<!-- MAIN CONTENT : begin -->
+							<div class="main__content">
+								<div class="main__content-wrapper">
+									<div class="main__content-inner">
+										<!-- POST CONTENT : begin -->
+										<div class="post__content">
+											<!-- WORDBENCH SLIDER : begin -->
+											<section class="lsvr-wordbench-slider lsvr-wordbench-slider--layout-text-right lsvr-wordbench-slider--animated">
+												<div class="lsvr-wordbench-slider__inner">
+													<!-- SLIDE LIST : begin -->
+													<div class="lsvr-wordbench-slider__list">
+														<!-- SLIDE : begin -->
+														<div class="lsvr-wordbench-slider__item lsvr-wordbench-slider__item--style3" data-style="style3">
+															<div class="lsvr-wordbench-slider__item-inner">
+																<div class="lsvr-wordbench-slider__item-image" aria-hidden="true" style="background-image: url( '../static/content/iotpic.png' );"></div>
+																<div class="lsvr-container">
+																	<div class="lsvr-wordbench-slider__item-content-wrapper">
+																		<div class="lsvr-wordbench-slider__item-content">
+																			<h2 class="lsvr-wordbench-slider__item-title">Queen Chrysalis</h2>
+																		<form>
+																			<p class="lsvr-wordbench-slider__item-button">
+																				<button  formaction="/led/on" class="lsvr-button lsvr-wordbench-slider__item-button-link">Turn on the light</button>
+																			</p>
+																			<p class="lsvr-wordbench-slider__item-button">
+																				<button formaction="/led/off" class="lsvr-button lsvr-wordbench-slider__item-button-link">Turn off the light</button>
+																			</p>
+																			<!-- <p class="lsvr-wordbench-slider__item-button">
+																				<button formaction="/distance" class="lsvr-button lsvr-wordbench-slider__item-button-link">Distance</button>
+																			</p> -->
+																			<p class="lsvr-wordbench-slider__item-button">
+																				<button formaction="/history" class="lsvr-button lsvr-wordbench-slider__item-button-link">Temperature & Humidity Data</button>
+																			</p>
+																		</form>
+																		<div class="lsvr-wordbench-slider__item-text">
+																			<!-- <p>Through the button below you can turn the LED on and off. You can also see the temperature, the humidity, the distance, and the state of the LED.</p> -->
+																			<p>LED status: <strong>{{led}}<strong> </p>
+																			<span>Temperature is: <strong>{{temperature}}</strong> </span>
+																			<span>Humidity is :<strong>{{ humidity }}</strong>  </span>
+																		
+																		</div>
+
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!-- SLIDE : end -->
+                        							</div>
+                        							<!-- SLIDE LIST : end -->
+                        						</div>
+                        					</section>
+                        					<!-- WORDBENCH SLIDER : end -->
+										</div>
+										<!-- POST CONTENT : end -->
+									</div>
+								</div>
+							</div>
+							<!-- MAIN CONTENT : begin -->
+						</div>
+					</main>
+					<!-- MAIN : end -->
+				</div>
+			</div>
+			<!-- CORE : end -->
+
+			<!-- FOOTER : begin -->
+			<footer id="footer" class="footer--has-widgets footer--has-menu footer--has-social-links footer--has-text footer--has-back-to-top">
+				<div class="footer__inner">
+
+					<!-- FOOTER WIDGETS : begin -->
+					<div class="footer-widgets footer-widgets--wider-first-col"><!-- Remove the "footer-widgets--wider-first-col" to make all columns equal width. -->
+						<div class="lsvr-container">
+							<div class="footer-widgets__inner">
+								<!-- GRID : begin -->
+								<div class="lsvr-grid">
+									<!-- GRID COLUMN : begin -->
+									<div class="footer-widgets__column lsvr-grid__col lsvr-grid__col--span-3 lsvr-grid__col--md-span-4 lsvr-grid__col--sm-span-6">
+										<div class="footer-widgets__column-inner">
+
+											<!-- LSVR TEXT WIDGET : begin -->
+											<div class="widget lsvr-text-widget">
+												<div class="widget__inner">
+													<h3 class="widget__title">Queen Chrysalis ｜ Millstone 1</h3>
+													<div class="widget__content">
+														<p>This is the Millstone 1 webpage. The Queen Chrysalis group contains two members <strong>Yijing Pan</strong> and <strong>Cheng Huang</strong>.
+														   Through this website you can control the LED. There are two operations which are <strong> Turn on the LED </strong> and <strong>Turn off the LED</strong>.
+														   Besides, you can also see the <strong>state of LED temperature and humidity's history data </strong>by time and you an also see the distance. 
+														</p>
+													</div>
+												</div>
+											</div>
+											<!-- LSVR TEXT WIDGET : end -->
+
+										</div>
+									</div>
+	
+									<!-- GRID COLUMN : end -->
+
+								</div>
+								<!-- GRID : end -->
+
+							</div>
+						</div>
+					</div>
+					<!-- FOOTER WIDGETS : end -->
+
+					<!-- FOOTER BOTTOM : begin -->
+					<div class="footer-bottom">
+						<div class="lsvr-container">
+							<div class="footer-bottom__inner">
+
+								<!-- FOOTER TEXT : begin -->
+								<div class="footer-text">
+									<p>&copy; Yijing Pan & Cheng Huang</p>
+								</div>
+								<!-- FOOTER TEXT : end -->
+
+							</div>
+						</div>
+					</div>
+					<!-- FOOTER BOTTOM : end -->
+				</div>
+			</footer>
+			<!-- FOOTER : end -->
+		</div>
+		<!-- WRAPPER : end -->
+
+		<!-- SCRIPTS : begin -->
+		<script src="../static/assets/js/jquery-3.6.0.min.js"></script>
+		<script src="../static/assets/js/wordbench-third-party-scripts.min.js"></script>
+		<script src="../static/assets/js/wordbench-scripts.js"></script>
+		<!-- SCRIPTS : end -->
+
+	</body>
+</html>
